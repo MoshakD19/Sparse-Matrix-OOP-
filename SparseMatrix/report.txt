@@ -1,0 +1,7 @@
+
+
+For Question 1, My solution uses a merge sort which we know has a worst time complexity of O(Nlog(n)). This is because we first divide the ArrayList into subarrays recursively. As we have half the amount of elements in each subarray the divide step takes a maximum of O(log(n) + 1). The extra 1 is for the case where there is an odd number of elements in the original ArrayList. The merge step take O(N) time as you loop through each subarray. Together this makes O(Nlog(n)). 
+
+
+
+For Question 3, My solution was within the time complexity of O(N1 + N2) where N1 and N2 are the number of non-zero elements of each operand matrix. I know this because I used a while loop to create the new matrix by adding elements by position and using pointers for each operand matrix to loop through them. If two elements in each operand matrix had the same position they would be added together and placed in the resulting matrix. The pointers would go up to the entries.size() of each operand matrix and then the while loop would break. This ensures that the complexity cannot be over O(N1 + N2).
